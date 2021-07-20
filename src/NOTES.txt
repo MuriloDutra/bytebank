@@ -1,2 +1,7 @@
-ENCAPSULAMENTO: é quando se esconde os atributos de uma classe, tornando eles acessíveis apenas através de métodos GETTERS and SETTERS.
-Outra definição: Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+ENCAPSULAMENTO: 
+	é quando se esconde os atributos de uma classe, tornando eles acessíveis apenas através de métodos GETTERS and SETTERS.
+	Outra definição: Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem para as suas características essenciais.
+
+
+PRIVATE:
+	um atributo que não pode ser lido nem modificado em outros arquivos a não ser a própria classe
