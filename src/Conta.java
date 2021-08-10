@@ -1,8 +1,13 @@
 public class Conta{
 	private double saldo;//PRIVATE: não pode ser lido nem modificado em outros arquivos a não ser a própria classe
-	private int agencia = 42; //Valor default para todas as instâncias de Conta
+	private int agencia;
 	private int numero;
 	private Cliente titular;
+	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+	}
 	
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -36,6 +41,10 @@ public class Conta{
 	}
 	
 	public void setNumero(int numero) {
+		if(numero <= 0) {
+			System.out.println("Não pode valor menor ou igual a zero.");
+			return;
+		}
 		this.numero = numero;
 	}
 	
@@ -44,6 +53,10 @@ public class Conta{
 	}
 	
 	public void setAgencia(int agencia) {
+		if(agencia <= 0) {
+			System.out.println("Não pode valor menor ou igual a zero.");
+			return;
+		}
 		this.agencia = agencia;
 	}
 	

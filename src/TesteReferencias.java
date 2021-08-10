@@ -1,6 +1,6 @@
 public class TesteReferencias {
 	public static void main(String [] args) {
-		Conta primeiraConta = new Conta();
+		Conta primeiraConta = new Conta(4578, 12345);
 		primeiraConta.deposita(300);
 		System.out.println("Saldo PRIMEIRA conta: " + primeiraConta.getSaldo());
 		
