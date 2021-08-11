@@ -5,3 +5,9 @@ ENCAPSULAMENTO:
 
 PRIVATE:
 	um atributo que não pode ser lido nem modificado em outros arquivos a não ser a própria classe
+	
+STATIC:
+	Ao criar um atributo static, o valor desse atributo é compartilhado entre todas as instâncias daquela
+	classe. Suponha que temos a classe Cliente e essa possui o atributo static "quantidadeDeClientes".
+	O atributo "quantidadeDeClientes" vai ser acessível para todas as instâncias de Cliente, compartilhando
+	o mesmo valor. Portanto, um atributo static é um atributo de Classe, não de instância. 
